@@ -3,7 +3,7 @@ import torch
 from flask import Flask, request, jsonify
 
 # Load the model and tokenizer from Hugging Face
-model_name = "google/gemma-1.1-2b-it"  # Replace with the correct model name if different
+model_name = "google/gemma-1.1-7b-it"  # Replace with the correct model name if different
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
