@@ -3,7 +3,7 @@ import torch
 from flask import Flask, request, jsonify
 
 # Load the model and tokenizer from Hugging Face
-model_name = "lmsys/vicuna-7b-v1.5"  # Replace with the correct model name if different
+model_name = "meta-llama/Llama-3.3-70B-Instruct"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
